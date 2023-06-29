@@ -24,7 +24,7 @@ public class Exercise_DimArray {
 //		arrs[0][3]= 2;
 //		arrs[0][2]= 3;
 //		arrs[0][1]= 4;
-//		arrs[0][0]= 5;
+//		arrs[0][0]= 5;                                      
 //		
 //		arrs[1][4]= 6;
 //		arrs[1][3]= 7;
@@ -87,7 +87,7 @@ public class Exercise_DimArray {
 			System.out.println();
 		}
 	}
-
+		 
 	public void exercise3() {
 		int[][] arrs = new int[5][5];
 		int k = 1;
@@ -126,17 +126,17 @@ public class Exercise_DimArray {
 
 		}
 
-//		arrs[0][0] =1;
-//		arrs[0][1] =2;
-//		arrs[0][2] =3;
-//		arrs[0][3] =4;
-//		arrs[0][4] =5;
-//		
-//		arrs[2][0] =6;
-//		arrs[2][1] =7;
-//		arrs[2][2] =8;
-//		arrs[2][3] =9;
-//		arrs[2][4] =10;	
+		arrs[0][0] =1;
+		arrs[0][1] =2;
+		arrs[0][2] =3;
+		arrs[0][3] =4;
+		arrs[0][4] =5;
+		
+		arrs[2][0] =6;
+		arrs[2][1] =7;
+		arrs[2][2] =8;
+		arrs[2][3] =9;
+		arrs[2][4] =10;	
 
 		for (int i = 0; i < arrs.length; i++) {
 			for (int j = 0; j < arrs[i].length; j++) {
@@ -177,4 +177,30 @@ public class Exercise_DimArray {
 		System.out.printf("4년 전체 평점 평균은 : %.2f\n", result);
 
 	}
+
+	
+	public void ex3() {
+		int [][] arr = new int[5][5];
+		arr[0][0] =5;
+		arr[0][1]= 4;
+		arr[0][2]= 3;
+		arr[0][3]= 2;
+		arr[0][4]= 1;
+		
+		arr[0][0] =5;
+		arr[0][1]= 4;
+		arr[0][2]= 3;
+		arr[0][3]= 2;
+		arr[0][4]= 1;
+
+		arr[0][0] =5;
+		arr[0][1]= 4;
+		arr[0][2]= 3;
+		arr[0][3]= 2;
+		arr[0][4]= 1;
+
+		
+
+	}
+	
 }
