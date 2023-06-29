@@ -23,45 +23,41 @@ public class Exercise_Random1 {
 		Scanner sc = new Scanner(System.in);
 		Random rand = new Random();
 		System.out.println("====== 동전 앞 뒤 맞추기 =======");
-		while(true) {
+		while (true) {
 			System.out.print("숫자를 입력해주세요 (1.앞면 / 2.뒷면) : ");
-		int choice = sc.nextInt();
-		if(choice < 0 || choice > 2) {
-			System.out.println("1 또는 2 를 입력해주세요.");
-			while(true) {
-				System.out.print("숫자를 입력해주세요 (1.앞면 / 2.뒷면) : ");
-				choice = sc.nextInt();
-				if(choice == 1 || choice == 2) {
-					break;
-				}else {
-					System.out.println("1 또는 2 를 입력해주세요.");
+			int choice = sc.nextInt();
+			if (choice < 0 || choice > 2) {
+				System.out.println("1 또는 2 를 입력해주세요.");
+				while (true) {
+					System.out.print("숫자를 입력해주세요 (1.앞면 / 2.뒷면) : ");
+					choice = sc.nextInt();
+					if (choice == 1 || choice == 2) {
+						break;
+					} else {
+						System.out.println("1 또는 2 를 입력해주세요.");
+					}
 				}
-			}
-					//두번째 방법
+				// 두번째 방법
 ////						do {
 ////							System.out.print("숫자를 입력해주세요 (1.앞면 / 2.뒷면) : ");
 ////							choice = sc.nextInt();					
 ////						}while(choice < 0 || choice > 2);
-		          
 
-		}
-		int computer = rand.nextInt(2) + 1;
-		// 1 부터 2까지의 랜덤한 수
-		// 0 부터 1까지의 랜덤 -> nextInt(2)
-		// 1 부터 2까지의 랜덤 -> nextInt(2) + 1
+			}
+			int computer = rand.nextInt(2) + 1;
+			// 1 부터 2까지의 랜덤한 수
+			// 0 부터 1까지의 랜덤 -> nextInt(2)
+			// 1 부터 2까지의 랜덤 -> nextInt(2) + 1
 
-		if(choice == computer) {
-			System.out.println("맞췄습니다.");
-		}else {
-			System.out.println("틀렸습니다.");
-		}
+			if (choice == computer) {
+				System.out.println("맞췄습니다.");
+			} else {
+				System.out.println("틀렸습니다.");
+			}
 		}
 	}
 }
-		
-		
-		
-		
+
 ////		Scanner sc = new Scanner(System.in);
 ////		System.out.println("숫자를 입력해주세요(1.앞면/ 2.뒷면):");
 ////		int computer = sc.nextInt();
@@ -82,6 +78,8 @@ public class Exercise_Random1 {
 //	}
 //	}
 //}
+        
+
 
 
 

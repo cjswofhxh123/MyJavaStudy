@@ -14,15 +14,11 @@ public class Exam_For {
 //				i++;
 //			}
 //			//3.do.while문
-			int i =0;
-			do {
-				System.out.println((i+1)+ ""  );
-				i++;
-			}while(i <10);
-				
-			}
-		}
-		
-	
+		int i = 0;
+		do {
+			System.out.println((i + 1) + "");
+			i++;
+		} while (i < 10);
 
-
+	}
+}

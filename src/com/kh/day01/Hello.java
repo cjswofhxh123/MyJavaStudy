@@ -1,28 +1,22 @@
 package com.kh.day01;
 
 public class Hello {
-	
-	public static int sum(int num1, int num2) 
+
+	public static int sum(int num1, int num2)
 	//
 	{
-		return num1+num2;
+		return num1 + num2;
 	}
-	
-	
-	public static void main(String [] args)
-	{
+
+	public static void main(String[] args) {
 		int i = 20;
 		int s;
 		char a;
-		
+
 		a = '?';
-		s =sum(i,10);
+		s = sum(i, 10);
 		System.out.println(a);
 		System.out.println("Hello");
 		System.out.println(s);
 	}
 }
-
-
-
-

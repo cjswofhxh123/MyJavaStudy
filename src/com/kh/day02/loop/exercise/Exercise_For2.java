@@ -23,19 +23,18 @@ public class Exercise_For2 {
 //	}
 //}
 
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 하나 입력");
+		int dan = sc.nextInt();
 
- Scanner sc =  new Scanner(System.in);
- System.out.print("정수 하나 입력");
- int dan = sc.nextInt();
- 
- if(dan >= 1 && dan <=9) {
-	 System.out.println(dan+ "단");
- 
- for(int i=1; i< 10; i++) {
-	 System.out.println("2*" + i +"=" +2*i);
-}
-}
-}
+		if (dan >= 1 && dan <= 9) {
+			System.out.println(dan + "단");
+
+			for (int i = 1; i < 10; i++) {
+				System.out.println("2*" + i + "=" + 2 * i);
+			}
+		}
+	}
 }
 //Scanner sc = new Scanner(System.in);
 //System.out.println("정수 하나 입력");
@@ -45,8 +44,3 @@ public class Exercise_For2 {
 //System.out.println("2단");
 //for (int i =1; i< 10; i++) {
 //	System.out.println("2*" + i + " =" + 2*i);
-
-
-
-
-
