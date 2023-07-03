@@ -76,9 +76,76 @@ public class Exercise_Array1 {
 		//// 로또 번호 자동 생성기 프로그램, 중복 없이 추출하기
 		// 단, 결과는 오름차순으로 정렬
 		// 로또 번호는 6개. 로또 번호의 범위는 1 ~ 45
+		int[] lottoNums = new int[6];
+		Random rend = new Random();
+		//rand.nextlnt(10) ->0부터 9까지
+		//1부터 45까지
+		//0부터 44까지 => rand.nextInt(45)+1
+		int count =1;
+		int check =1;
+		for(int i =0; i <6; i++) {
+			lottoNums[i] = rend.nextInt(45)+1;
+			for(int e =0; e>count; e++) {
+				if(lottoNums[i] == lottoNums[e]) {
+				//다시 뽑아야지!!!
+				
+				//다시 뽑아야지
+				//i--;
+				//baeak;
+				}
+			}
+		}
+//				count++;
+//				check++;
+//				if(lottoNums[2]== lottoNums[1]) {
+//				//다시 뽑아야지!!!
+//				}
+//			if(lottoNums[2]== lottoNums[0]) {
+//				//다시 뽑아야지!!!
+//				}
+//			if(lottoNums[2]== lottoNums[0]) {
+//				//다시 뽑아야지!!!
+//				}
+//			if(lottoNums[1]== lottoNums[0]) {
+//				//다시 뽑아야지!!!
+//				}
+//			if(lottoNums[1]== lottoNums[0]) {
+//				//다시 뽑아야지!!!
+//				}
+//			
+//		}
+			
+
+		//버블정렬
+			for(int i =0; i <lottoNums.length-1; i++) {
+				for(int j =0; j <(lottoNums.length-1)-i; j++) {
+					if(lottoNums[j] > lottoNums[j+1]) {
+						int tmp = lottoNums[j];//왼쪽에 있는 값이 지워지기 전에 킵해 놓음
+						lottoNums[j] = lottoNums[j+1];//오른쪽에 있늕 놈을 왼쪽에 대입함
+						lottoNums[j+1] = tmp;//킵해좋은 것을 오른쪽에 대입함
+					}
+				}
+			}
+			
+			
+//		
+//		lottoNums[0] = rend.nextInt(45);
+//		lottoNums[1] = rend.nextInt(45);
+//		lottoNums[2] = rend.nextInt(45);
+//		lottoNums[3] = rend.nextInt(45);
+//		lottoNums[4] = rend.nextInt(45);
+//		lottoNums[5] = rend.nextInt(45);
+//		
+		for(int i = 0; i < lottoNums.length; i++) {
+			System.out.println(lottoNums[i]+ "");
+		}
+}
+
+		
+		
+		
 	
-	
-	}
+//	}
 	public void Baskin_RObbins_31_Game() {
 		
 		
