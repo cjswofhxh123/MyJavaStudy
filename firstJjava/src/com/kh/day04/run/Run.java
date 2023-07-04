@@ -1,0 +1,26 @@
+package com.kh.day04.run;
+
+import com.kh.day03.array.exercise.Exercise_Array1;
+import com.kh.day04.dimarray.exericise.Exercise_DimArray;
+import com.kh.day04.myexception.exercise.Exercise_Exception;
+
+public class Run {
+
+	public static void main(String[] args) {
+		Exercise_DimArray dimArr = new Exercise_DimArray();
+		 //dimArr.exercise();
+		// dimArr.exercise2();
+//		dimArr.exercise3();
+//		dimArr.exercise4();
+		// dimArr.exercise5();
+		//dimArr.ex3();
+		Exercise_Exception excp = new Exercise_Exception();
+		//excp.exercise1();
+		//excp.practice2();
+		//excp.exercise3();
+		excp.exercise4();
+		Exercise_Array1 exar = new Exercise_Array1();
+		//exar.lottoExercise();
+	}
+
+}
