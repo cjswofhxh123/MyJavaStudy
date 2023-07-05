@@ -6,9 +6,10 @@ public class Exam_Upcasting {
 	Student std = new Student();
 	Person p = new Person();
 	
-	Student parent = new Student("일용자");
+	Student parent = new Student("일용자","이용자");
 	System.out.println(parent.name);
 	System.out.println(parent.id);
+
 	
 	System.out.println(((Student)parent).grade);
 	System.out.println(((Student)parent).depertment);

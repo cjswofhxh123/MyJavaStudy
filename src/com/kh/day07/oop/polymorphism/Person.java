@@ -6,7 +6,9 @@ public class Person {
 	
 	public Person() {}
 	
-	public Person(String name){
+	public Person(String name,String id){
 		this.name= name;
+		this.id= id;
 	}
+	
 }
