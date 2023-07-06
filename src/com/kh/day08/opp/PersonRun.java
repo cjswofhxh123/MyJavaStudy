@@ -8,7 +8,7 @@ public class PersonRun {
 		ps.buyCoffe(new CafeCoppey(), 4000);
 		Person lee = new Person("이씨",20000);
 		lee.buyCoffe(new CongCafe(), 4500);
-		lee.printInfo();
+		ps.printInfo();
 	}
 
 }
