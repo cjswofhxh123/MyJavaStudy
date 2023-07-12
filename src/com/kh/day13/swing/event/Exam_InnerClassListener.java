@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class Exam_IndepClassListener extends JFrame {
+public class Exam_InnerClassListener extends JFrame {
 
-	public Exam_IndepClassListener() {
+	public Exam_InnerClassListener() {
 		setTitle("Action 이벤트 리스너 예제");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
@@ -33,12 +33,13 @@ public class Exam_IndepClassListener extends JFrame {
 			} else {
 				btn.setText("Action");
 			}
+			Exam_InnerClassListener.this.setTitle(btn.getText() + " 이벤트 리스너 연습");
 
 		}
 	}
 
 	public static void main(String[] args) {
-		new Exam_IndepClassListener();
+		new Exam_InnerClassListener();
 	}
 
 }
